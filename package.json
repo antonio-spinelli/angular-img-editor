@@ -1,7 +1,7 @@
 {
   "name": "angular-img-editor",
   "version": "1.0.0",
-  "description": "An AngularJs Image Editor",
+  "description": "Angular directives which use Canvas to provide an editable context for images.\rJcrop, used for cropping http://deepliquid.com/content/Jcrop.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
