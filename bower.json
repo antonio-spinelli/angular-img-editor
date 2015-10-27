@@ -1,0 +1,35 @@
+{
+  "name": "angular-img-editor",
+  "version": "1.0.0",
+  "homepage": "https://github.com/antonio-spinelli/angular-img-editor",
+  "authors": [
+    "Antonio Spinelli <antonio.86.spinelli@gmail.com>"
+  ],
+  "description": "An AngularJs Image Editor",
+  "main": [
+    "src/angular-img-editor.js"
+  ],
+  "keywords": [
+    "Image",
+    "Editor",
+    "Resize",
+    "Crop",
+    "Rotate",
+    "Angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo",
+    "src",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0",
+    "jquery": ">=1.9.0",
+    "jcrop": "~0.9.12"
+  }
+}

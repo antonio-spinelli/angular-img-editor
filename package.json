@@ -1,0 +1,24 @@
+{
+  "name": "angular-img-editor",
+  "version": "1.0.0",
+  "description": "An AngularJs Image Editor",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonio-spinelli/angular-img-editor.git"
+  },
+  "author": "Antonio Spinelli <antonio.86.spinelli@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonio-spinelli/angular-img-editor/issues"
+  },
+  "homepage": "https://github.com/antonio-spinelli/angular-img-editor#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
