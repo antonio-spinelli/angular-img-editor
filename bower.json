@@ -7,7 +7,7 @@
   ],
   "description": "An AngularJs Image Editor",
   "main": [
-    "src/angular-img-editor.js"
+    "dist/angular-img-editor.js"
   ],
   "keywords": [
     "Image",

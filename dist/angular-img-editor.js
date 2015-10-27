@@ -1,3 +1,13 @@
+/**
+ * angular-img-editor
+ * An AngularJs Image Editor
+ * @version v1.0.0
+ * @author Antonio Spinelli <antonio.86.spinelli@gmail.com>
+ * @link https://github.com/antonio-spinelli/angular-img-editor
+ * @license MIT
+ */
+(function (angular) {
+
 /* 
   Luke Mason 2014
   Angular directives which use Canvas to provide an editable context for images.
@@ -467,3 +477,5 @@ function getRotatedRectBB(x, y, width, height, rAngle) {
         height: h
     });
 }
+
+})(angular);
