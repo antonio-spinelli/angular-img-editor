@@ -29,13 +29,13 @@ gulp.task('build', function() {
 		' * @link <%= pkg.homepage %>',
 		' * @license <%= pkg.license %>',
 		' */',
-		'(function (angular) {',
+		'(function (angular, $) {',
 		'',
 		''].join('\n');
 
 	var footer = [
 		'',
-		'})(angular);',
+		'})(angular, jQuery);',
 		''].join('\n');
 
 	gulp.src([

@@ -1,14 +1,14 @@
 /**
  * angular-img-editor
- * An AngularJs Image Editor
+ * Angular directives which use Canvas to provide an editable context for images./rJcrop, used for cropping http://deepliquid.com/content/Jcrop.html
  * @version v1.0.0
  * @author Antonio Spinelli <antonio.86.spinelli@gmail.com>
  * @link https://github.com/antonio-spinelli/angular-img-editor
  * @license MIT
  */
-(function (angular) {
+(function (angular, $) {
 
-/* 
+/*
   Luke Mason 2014
   Angular directives which use Canvas to provide an editable context for images.
   Jcrop, used for cropping http://deepliquid.com/content/Jcrop.html
@@ -39,8 +39,8 @@ angular.module('imgEditor.directives', [])
             };
         }
     ])
-/* read a file from a url and convert it to a data src 
-(this will only work for CORS images, in non-cors supporting browsers 
+/* read a file from a url and convert it to a data src
+(this will only work for CORS images, in non-cors supporting browsers
 serve images from the same domain as the user is on. */
 .directive('imgDataFromUri', function() {
     return {
@@ -132,7 +132,7 @@ serve images from the same domain as the user is on. */
                     }
                     // clear the temporary image
                     rotateImage = null;
-                    //save 
+                    //save
                     dataURL = canvas.toDataURL('image/jpeg',1);
                 }
                 scope.$broadcast('loadedImg', loadedImgData, dataURL);
@@ -195,7 +195,7 @@ serve images from the same domain as the user is on. */
                 fullSize.src = element.attr('src');
             } //load the src if it was already on the dom
             scope.$on('loadedImg', function(e, img, imgSRC) {
-                //if we are using one of the helpers to load img data 
+                //if we are using one of the helpers to load img data
                 //this will load the full sized as original and cropped into the view
                 fullSize.src = imgSRC;
                 orig.src = img.src;
@@ -205,7 +205,7 @@ serve images from the same domain as the user is on. */
                 scope.cropping = true;
                 croppedImage = new Image();
                 croppedImage.src = element.attr('src');
-                //re-load the full size image, 
+                //re-load the full size image,
                 //instead of the cropped on so that the user can crop wider
                 element.attr('src', fullSize.src);
 
@@ -478,4 +478,4 @@ function getRotatedRectBB(x, y, width, height, rAngle) {
     });
 }
 
-})(angular);
+})(angular, jQuery);
